@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shop Fresh Bouquets | Alluring Florals Durban </title>
+<meta name="description" content="Shop fresh flowers online. Sunflowers R280, Tulips R300, Roses R310. Free delivery over R500 in Durban. Order today!">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Alluring Florals</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+</div>
+<body>
+
+<nav class="navbar">
+  <a href="Home.html" class="logo">ALLURING FLORALS 🌸</a>
+  <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="Shop.html" class="active">Shop</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Enquiry.html">Enquiry</a></li>
+    <li><a href="Cart.html">Cart </a></li>
+  </ul>
+</nav>
+
+<div class="shop-header">
+  <h1>Our Bouquets</h1>
+  <p id="shopSub">Free delivery in Durban for orders over R500 - 7 beautiful blooms</p>
+</div>
+
+
+<div class="shop-controls">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search flowers... 🌸" onkeyup="searchProducts()">
+    <span class="search-icon">🔍</span>
+  </div>
+  <select id="sortSelect" onchange="sortProducts()">
+    <option value="default">Sort: Featured</option>
+    <option value="low">Price: Low to High</option>
+    <option value="high">Price: High to Low</option>
+    <option value="name">Name: A-Z</option>
+  </select>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterProducts('all')">All 🌼</button>
+  <button class="filter-btn" onclick="filterProducts('Sunflower')">Sunflower</button>
+  <button class="filter-btn" onclick="filterProducts('Tulip')">Tulip</button>
+  <button class="filter-btn" onclick="filterProducts('Lily')">Lily</button>
+  <button class="filter-btn" onclick="filterProducts('Orchid')">Orchid</button>
+  <button class="filter-btn" onclick="filterProducts('Rose')">Rose</button>
+</div>
+
+
+<div id="productGrid" class="product-grid"></div>
+
+<div id="quickModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <div class="modal-info">
+      <h2 id="modalName"></h2>
+      <p id="modalType"></p>
+      <p id="modalPrice"></p>
+      <p id="modalDesc">Handcrafted with love in Durban. Fresh, same-day delivery available.</p>
+      <button id="modalBtn" class="btn btn-full">ADD TO CART</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="toast" class="toast hidden">Added to cart! 🌸</div>
+
+div class="social-share">
+  <h3>Share Alluring Florals 🌸</h3>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://alluringflorals.co.za" target="_blank" class="social-btn facebook">Share on Facebook</a>
+  <a href="https://wa.me/?text=Check%20out%20Alluring%20Florals%20-%20Fresh%20flowers%20Durban%20https://alluringflorals.co.za" target="_blank" class="social-btn whatsapp">Share on WhatsApp</a>
+  <a href="https://www.instagram.com/alluringflorals" target="_blank" class="social-btn insta">Follow on Instagram</a>
+</div>
+<footer
+>© 2026 Alluring Florals - KZN's Favourite
+</footer>
+
+<script src="JS/script.js"></script>
+</body>
+</html>

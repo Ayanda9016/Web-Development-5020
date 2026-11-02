@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Alluring Florals</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+</body>
+
+  <nav class="navbar">
+    <a href="Home.html" class="logo">ALLURING FLORALS 🌸</a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Enquiry.html">Enquiry</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Cart.html" class="active">Cart</a></li>
+    </ul>
+  </nav>
+
+  <div class="title">
+    <h1>Your Cart</h1>
+    <p id="cartSub">Your beautiful blooms</p>
+  </div>
+
+  <div class="cart-container">
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h3>Order Summary</h3>
+      <div class="summary-row"><span>Items:</span><span id="totalItems">0</span></div>
+      <div class="summary-row"><span>Subtotal:</span><span id="subTotal">R0</span></div>
+      <div class="summary-row"><span>Delivery:</span><span>R50</span></div>
+      <hr>
+      <div class="summary-row total"><span>Total:</span><span id="grandTotal">R50</span></div>
+      <button class="btn btn-full" onclick="checkout()">CHECKOUT</button>
+      <button class="btn btn-clear" onclick="clearCart()">CLEAR CART</button>
+    </div>
+  </div>
+
+  <div id="emptyCart" class="empty-cart hidden">
+    <div class="empty-icon">🛒</div>
+    <h2>Your cart is empty</h2>
+    <p>Looks like you haven't added any flowers yet</p>
+    <a href="Shop.html" class="btn btn-shop">SHOP NOW</a>
+  </div>
+
+  <h3>Share Alluring Florals 🌸</h3>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://alluringflorals.co.za" target="_blank" class="social-btn facebook">Share on Facebook</a>
+  <a href="https://wa.me/?text=Check%20out%20Alluring%20Florals%20-%20Fresh%20flowers%20Durban%20https://alluringflorals.co.za" target="_blank" class="social-btn whatsapp">Share on WhatsApp</a>
+  <a href="https://www.instagram.com/alluringflorals" target="_blank" class="social-btn insta">Follow on Instagram</a>
+</div>
+  <footer>
+  © 2026 Alluring Florals
+  </footer>
+  <script src="JS/script.js"></script>
+</body>
+</html>
